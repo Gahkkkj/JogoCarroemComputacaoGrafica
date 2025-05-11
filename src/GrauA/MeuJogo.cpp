@@ -85,23 +85,23 @@ const GLuint LARGURA = 800, ALTURA = 600; // Dimensões da janela
 // Configurações de dificuldade e gameplay
 const int NUM_TEXTURAS_CARROS = 4;              // Número de texturas diferentes para carros inimigos
 const float VELOCIDADE_INIMIGO_BASE = 2.0f;     // Velocidade inicial dos inimigos
-const float VELOCIDADE_INIMIGO_MAXIMA = 7.0f;   // Velocidade máxima dos inimigos
+const float VELOCIDADE_INIMIGO_MAXIMA = 8.0f;   // Velocidade máxima dos inimigos
 const float TAXA_AUMENTO_DIFICULDADE = 0.6f;    // Quanto aumenta a velocidade por segundo
 const float INTERVALO_DIFICULDADE = 8.0f;      // Intervalo para aumentar dificuldade
 const int MAX_INIMIGOS = 1000;                   // Número máximo de inimigos na tela
-const float INTERVALO_APARICAO_INIMIGOS = 0.3f; // Intervalo entre aparecer novos inimigos
+const float INTERVALO_APARICAO_INIMIGOS = 0.2f; // Intervalo entre aparecer novos inimigos
 
 // Configurações de interface do menu
 const vec2 TAMANHO_BOTAO = vec2(200, 60);              // Tamanho padrão dos botões
 const float OFFSET_Y_BOTAO = 50.0f;                    // Espaçamento vertical entre botões
 const vec3 COR_BOTAO = vec3(0.2f, 0.3f, 0.8f);         // Cor base dos botões
-const vec3 COR_HOVER_INICIAR = vec3(1.0f, 0.5f, 0.5f); // Cor quando mouse está sobre o botão Iniciar
-const vec3 COR_HOVER_SAIR = vec3(0.8f, 0.5f, 0.8f);    // Cor quando mouse está sobre o botão Sair
+const vec3 COR_HOVER_INICIAR = vec3(0.0f, 1.0f, 0.5f); // Cor quando mouse está sobre o botão Iniciar
+const vec3 COR_HOVER_SAIR = vec3(1.0f, 0.5f, 0.5f);    // Cor quando mouse está sobre o botão Sair
 
 // Array de botões do menu
-Botao botoes[] = {
-    {vec2(LARGURA / 2, ALTURA / 2 + OFFSET_Y_BOTAO), TAMANHO_BOTAO, "Iniciar", vec3(1.0f, 0.0f, 0.0f)}, // Botão Iniciar (vermelho)
-    {vec2(LARGURA / 2, ALTURA / 2 - OFFSET_Y_BOTAO), TAMANHO_BOTAO, "Sair", vec3(0.5f, 0.0f, 0.5f)}};   // Botão Sair (roxo)
+Botao botoes[] = {                                                                  
+    {vec2(LARGURA / 2, ALTURA / 2 + OFFSET_Y_BOTAO), TAMANHO_BOTAO, "Iniciar", vec3(0.0f, 1.0f, 0.0f)}, // Botão Iniciar (vermelho)
+    {vec2(LARGURA / 2, ALTURA / 2 - OFFSET_Y_BOTAO), TAMANHO_BOTAO, "Sair", vec3(1.0f, 0.0f, 0.0f)}};   // Botão Sair (roxo)
 
 // Código fonte dos shaders (programas que rodam na GPU)
 const GLchar *codigoFonteVertexShader = R"(
