@@ -4,15 +4,6 @@ Um simples jogo de corrida 3D desenvolvido do zero utilizando C++ e a API gráfi
 
 > 🚧 **Status:** Projeto concluído. 🚧
 
-### 🎬 Demonstração em Vídeo / GIF
-
-**Para um projeto gráfico, uma demonstração visual é essencial! Grave um GIF ou um vídeo curto mostrando o carro em movimento e adicione aqui.**
-
-_Exemplo de como adicionar um GIF:_
-`![Demonstração do Jogo](https://i.imgur.com/link_do_seu_gif.gif)`
-
----
-
 ## ✨ Funcionalidades
 
 * 🚗 **Controle do Veículo:** Dirija um carro em um cenário 3D com controles de aceleração, freio e direção.
